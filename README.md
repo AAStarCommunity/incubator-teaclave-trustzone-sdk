@@ -1,4 +1,3 @@
-
 # TEE-Account by AAStar
 
 AAStar use Apache Teaclave open source project to build TEE-Account, like a
@@ -8,11 +7,11 @@ sign the transaction with a verified fingerprint signature. And all siganatures
 will be verified by DVT and onchain account contract.
 
 TEE-Account is a part of our [AirAccount](https://aastar.io/airaccount) project.
-![](https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202505101719766.png)
+<img src="https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202505101719766.png" alt="AirAccount" width="45%" />
 
 https://github.com/AAStarCommunity/TEE-Account/tree/aastar-dev/projects/web3/eth_wallet
 
--------
+---
 # Teaclave TrustZone SDK
 
 [![License](https://img.shields.io/badge/license-Apache-green.svg)](LICENSE)
