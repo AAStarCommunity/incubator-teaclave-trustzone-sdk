@@ -1,3 +1,16 @@
+# TEE-Account by AAStar
+
+AAStar use Apache Teaclave open source project to build TEE-Account, like a
+hardware wallet based on TEE for community. We run TEE-Account on OP-TEE on
+Raspberry Pi 5. This account save your private key in secure storage on OP-TEE,
+sign the transaction with a verified fingerprint signature. And all siganatures
+will be verified by DVT and onchain account contract.
+
+TEE-Account is a part of our [AirAccount](https://aastar.io/airaccount) project.
+![](https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202505101719766.png)
+
+---
+
 # Eth-Wallet: A Sample Trusted Application for Wallet Abstraction and Transaction Signing
 
 This repository provides a reference implementation of an Ethereum wallet as a
@@ -43,7 +56,7 @@ security measures required for a production-grade key custodian solution across
 the entire key lifecycle. Developers should address the following considerations
 when adapting this demo for real-world use cases:
 
-- **Secure User Interface**:  
+- **Secure User Interface**:\
   In the `create_wallet` function, the mnemonic is returned to the Normal World
   for backup. This approach is inherently risky. For production systems, it is
   strongly recommended to display the mnemonic on a Trusted UI or secure
@@ -51,7 +64,7 @@ when adapting this demo for real-world use cases:
   this secure display. As secure display implementations are hardware-specific,
   this demo does not include such functionality.
 
-- **Secure Storage Limitations**:  
+- **Secure Storage Limitations**:\
   Keys in this demo are stored in an encrypted file on the Normal World File
   System. While this approach ensures basic protection, root access in the
   Normal World could delete this file, leading to key loss. For production
