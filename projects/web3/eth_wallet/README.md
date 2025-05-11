@@ -7,11 +7,23 @@ sign the transaction with a verified fingerprint signature. And all siganatures
 will be verified by DVT and onchain account contract.
 
 TEE-Account is a part of our [AirAccount](https://aastar.io/airaccount) project.
+
 <img src="https://raw.githubusercontent.com/jhfnetboy/MarkDownImg/main/img/202505101719766.png" alt="AirAccount" width="45%" />
 
 https://github.com/AAStarCommunity/TEE-Account/tree/aastar-dev/projects/web3/eth_wallet
 
----
+## How to start?
+
+1. We use Mac + QEMU + OP-TEE + Rust to build the TEE-Account.
+2. We plan to use NXP i.MX8M(or TI AM57xx) + OP-TEE to deploy the TEE-Account.
+
+### Dev
+
+[Initial Setup](./docs/inition.md) [solution-mac](./docs/solution-mac.md)
+
+### Deploy
+
+[hardware](./docs/hardware.md)
 
 # Eth-Wallet: A Sample Trusted Application for Wallet Abstraction and Transaction Signing
 
